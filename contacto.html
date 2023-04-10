@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Icono que aparece junto  al nombre del título del sitio web -->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+    <!-- Cargar la libreria Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Catálogo Candy Malvys</title>
+</head>
+
+<body>
+    <header class=" bg-dark text-center text-white p-4"><!-- Encabezado -->
+        <h1>Candy Malvys</h1> <!-- Título 1 -->
+        <h2>La mayor variedad de golosinas</h2> <!-- Título 2 -->
+    </header>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">¿Quienes Somos?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contáctenos</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                  
+                    <button class="btn btn-success" type="submit">Carrito</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cuerpo principal -->
+    <main class="container bg-light p-2">
+        <div class="row">
+
+            <section class="col-lg-6 my-5">
+                <h3>Ubicanos en:</h3> <!-- título 3 -->
+                
+                <ul> <!-- lista desordenada -->
+                    <li>Jr. Ayacucho 851 - Cercado de Lima</li> <!-- lista item -->
+                    <li>Teléfono: (01)376-0264</li>
+                    <li>Celular: 995855088</li>
+                    <li>Whatsapp: 963710180</li>
+                </ul>
+                <!-- Insertando un mapa -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.8448212504463!2d-77.0308096850708!3d-12.054195945321014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8b99bbc53db%3A0xde4d615b1e53e2f5!2sJr.%20Ayacucho%20851%2C%20Lima%2015001!5e0!3m2!1ses!2spe!4v1679746642746!5m2!1ses!2spe" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+
+        
+
+            <section class="col-lg-6 my-5 p-2 bg-warning">
+                <h3 class="my-4">Déjanos un Mensaje</h3>
+                <form>
+                   <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 mb-3">
+                            <label for="inputNombre" class="form-label">Ingrese su nombre</label>
+                            <input type="text" class="form-control" id="inputNombre" maxlength=50 required >
+                            </div>
+                            <br>
+                            <div class="col-lg-6 mb-3">
+                                <label for="inputApellido" class="form-label">Ingrese sus apellidos</label>
+                                <input type="text" class="form-control" id="inputApellido" maxlength=54 required >
+                            </div>
+                            <br>
+                            <div  class="col-lg-6 mb-3">
+                                <label for="inputEmail" class="form-label">Ingrese su correo electrónico</label>
+                                <input type="email" class="form-control" id="inputEmail" maxlength=128 required>
+                            </div>
+                            <br>
+                            <div class="col-lg-6 mb-3">
+                                <label for="inputnumPhone" class="form-label">Ingrese su teléfono o celular</label>
+                                <input type="text" class="form-control" id="inputnumPhone" maxlength="13" minlength="7" required>
+                            </div>
+                            <div >
+                            
+                        </div>
+                    </div> 
+                
+                    <div class="row">
+                        <div class="col-lg-12 mb-3">
+                            <label for="inputState" class="form-label">Escoja el asunto del mensaje</label>
+                            <select id="inputState" class="form-select">
+                                <option value>Seleccione una opción</option>
+                                <option value="comprarMayor">Comprar productos por mayor</option>
+                                <option value="comprarMenor">Comprar productos por menor</option>
+                                <option value="devolucionProducto">Consulta para devolución de producto</option>
+                                <option value="consultaGeneral">Hacer consulta general</option>
+                                
+                            </select>
+                        </div>
+                        <br>
+                        <div class="col-lg-12 my-2">
+                            <label for="exampleFormControlTextarea1" >Ingrese su mensaje</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" cols="30" rows="10" required>
+                            </textarea>
+                        </div>
+                        <div>
+                        <div class="form-check col-lg-12 my-2">
+                            <input class="form-check-input" type="checkbox" id="gridCheck" required>
+                            <label class="form-check-label" for="gridCheck">
+                            Autorizo el envio de publicidad e información comercial
+                            </label>
+                        </div>
+                    </div>
+                 
+
+                    <div class="col-12 ">
+                    <button  type="submit" class="btn-p  d-block m-auto ">Enviar</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer  my-3 p-3" > <!-- Pie de página -->
+        <p class="h5 text-center text-white ">Todos los derechos Reservados &copy; 2023 a Candy Malvys</p>
+        <P class="h5 text-center text-white ">Desarrollado por Ronal Salazar M</P>
+    </footer>
+ <!-- Cargando funciones de Bootstrap -->
+ <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+header{
+    background-image: url(img/header.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.descripcion{
+    color: firebrick;
+}
+.precioOriginal {
+    font-size: 1.5em;
+    color: burlywood;
+    text-decoration: line-through;
+}
+.precioDescuento {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: firebrick;
+}
+.precioFinal {
+    font-size: 2em;
+    color: firebrick;
+    font-weight: bold;
+}
+.btn{
+    padding: 5px 15px;
+  
+}
+.footer{
+    background-color: #800020;
+}

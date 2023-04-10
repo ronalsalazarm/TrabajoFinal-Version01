@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Icono que aparece junto  al nombre del título del sitio web -->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+    <!-- Cargar la libreria Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Catálogo Candy Malvys</title>
+</head>
+
+<body>
+    <header class="text-center text-white p-4"><!-- Encabezado -->
+        <h1>Candy Malvys</h1> <!-- Título 1 -->
+        <h2>La mayor variedad de golosinas</h2> <!-- Título 2 -->
+    </header> 
+   
+    <nav class="navbar navbar-expand-lg p-2  bg-warning-subtle text-emphasis-warning " >
+        <div class="container container-fluid  ">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 " >
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="about.html">¿Quienes Somos?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contáctenos</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                  
+                    <button class="btn btn-warning text-white  btn-lg " type="submit">Carrito</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    
+
+    <!-- Notificación -->
+    <div class="text-center p-3 bg-warning">
+        VENTA DE PRODUCTOS - CATÁLOGO MARZO 2023
+    </div>
+
+    <!-- Parte principal -->
+    <main class="container">
+        <!-- Sección de catálogo -->
+        <section id="catalogo" class="row"> <!-- id es un identificador y es único -->
+
+            <!-- Articulo 01 -->
+            <article class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card border-warning my-3">
+                    <div class="card-body">
+                        <picture>
+                            <!-- El arcivo img01.jpg está dentro de la carpeta img  -->
+                            <img class="img-fluid" src="img/img01.jpg" alt="Galleta tejana" class="imgProducto">   <!-- Insertando una imagen -->
+                          
+                        </picture>
+                        <hr><!-- línea horizontal -->
+                            <h5 class="text-dark text-center ">Galleta Tejana Sayon 480g</h5> <!-- título nivel 3 -->
+                            <br><!-- Salto de línea -->
+                            <p class="descripcion">Descripción: Galletas con cobertura sabor a chocolate</p> <!-- Es un párrafo -->
+                           
+                            <p>
+                                <!-- class, es un atributo cuyo valor se puede repetir -->
+                                <span class="precioOriginal">S/11.20</span> <span class="precioDescuento"> - 2%</span> <br>
+                                <!-- span,contenedor en la misma línea -->
+                                <span class="precioFinal">S/10.90</span>
+                            </p>
+                            <button type="button" class="btn btn-primary btn-sm d-block m-auto">Agregar al carrito</button type="button" class="btn btn-primary btn-sm d-block m-auto">
+                            <br>
+                    </div>
+                </div>  
+            </article>
+            <!-- Articulo 02 -->
+            <article class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card border-warning my-3">
+                    <div class="card-body">
+                        <picture>
+                            <!-- El arcivo img02.webp está dentro de la carpeta img  -->
+                            <img class="img-fluid" src="img/img02.webp" alt="Galleta casino" class="imgProducto">
+                        </picture>
+                        <hr><!-- línea horizontal -->
+                            <h5>Galleta Casino Fresa</h5>
+                            <br><!-- Salto de línea -->
+                            <P>Descripción: Galleta con crema sabor fresa - contiene 6 paquetes </P>
+                            <p>
+                                <!-- class, es un atributo cuyo valor se puede repetir -->
+                                <span class="precioOriginal">S/5.60</span> <span class="precioDescuento"> - 1%</span> <br>
+                                <span class="precioFinal">S/5.50</span>
+                            </p>
+                            <button type="button" class="btn btn-primary btn-sm d-block m-auto">Agregar al carrito</button type="button" class="btn btn-primary btn-sm d-block m-auto">
+                            <br><!-- Salto de línea -->
+                       
+                    </div>
+                </div>
+               
+            </article>
+            <!-- Articulo 03 -->
+            <article class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card border-warning my-3">
+                    <div class="card-body">
+                        <picture>
+                            <!-- El arcivo img03.jpg está dentro de la carpeta img  -->
+                            <img class="img-fluid" src="img/img03.jpg" alt="Galleta margarita" class="imgProducto">
+                        </picture>
+                        <hr><!-- línea horizontal -->
+                        <h5>Galleta Margarita Sayon </h5>
+                        <br><!-- Salto de línea -->
+                        <p>Descripción: Galletas dulces - contiene 6 paquetes de galletas</p>
+                        <p>
+                            <!-- class, es un atributo cuyo valor se puede repetir -->
+                            <span class="precioOriginal">S/5.00</span> <span class="precioDescuento"> - 2%</span> <br>
+                            <span class="precioFinal">S/4.90</span>
+                        </p>
+                        <button type="button" class="btn btn-primary btn-sm d-block m-auto">Agregar al carrito</button type="button" class="btn btn-primary btn-sm d-block m-auto">
+                        <br><!-- Salto de línea -->
+                    </div>
+                </div>
+                
+            </article>
+            <!-- Articulo 04 -->
+            <article class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card border-warning my-3">
+                    <div class="card-body">
+                        <picture>
+                            <!-- El arcivo img04.webp está dentro de la carpeta img  -->
+                            <img class="img-fluid" src="img/img04.webp" alt="Galleta chomp" class="imgProducto">
+                        </picture>
+                        <hr><!-- línea horizontal -->
+                        <h5>Galleta Chomp Chocolate</h5>
+                        <br><!-- Salto de línea -->
+                        <p>Descripción: Galletas Chomp sabor chocolate - Contiene 6 unidades</p>
+                        
+                        <p>
+                            <!-- class, es un atributo cuyo valor se puede repetir -->
+                            <span class="precioOriginal">S/14.80</span> <span class="precioDescuento"> - 3%</span> <br>
+                            <span class="precioFinal">S/14.40</span>
+                        </p>
+                       
+                        <button type="button" class="btn btn-primary btn-sm d-block m-auto">Agregar al carrito</button type="button" class="btn btn-primary btn-sm d-block m-auto">
+                        <br>
+                    </div>
+                </div>
+              
+            </article>
+            <!-- Articulo 05 -->
+            <article class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card border-warning my-3">
+                    <div class="card-body">
+                        <picture>
+                            <!-- El arcivo img05.webp está dentro de la carpeta img  -->
+                            <img class="img-fluid" src="img/img05.webp" alt="Galleta morochas" class="imgProducto">
+                        </picture>
+                        <hr><!-- línea horizontal -->
+                        <h5>Galletas Morochas</h5>
+                        <br><!-- Salto de línea -->
+                        <p>Descripción: Galletas bañadas con pasta sabor a chocolate </p>
+                        <p>
+                            <!-- class, es un atributo cuyo valor se puede repetir -->
+                            <span class="precioOriginal">S/1.20</span> <span class="precioDescuento"> - 1%</span> <br>
+                            <span class="precioFinal">S/1.10</span>
+                        </p>
+                        <button type="button" class="btn btn-primary btn-sm d-block m-auto">Agregar al carrito</button type="button" class="btn btn-primary btn-sm d-block m-auto">
+                        <br><!-- Salto de línea -->
+                    </div>
+                </div>
+               
+            </article>
+            <!-- Articulo 06 -->
+            <article class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card border-warning my-3">
+                    <div class="card-body">
+                        <picture>
+                            <!-- El arcivo img06.webp está dentro de la carpeta img  -->
+                            <img class="img-fluid" src="img/img06.webp" alt="Galleta munición" class="imgProducto">
+                        </picture>
+                        <hr><!-- línea horizontal -->
+                        <h5>Galleta Munición 450g</h5>
+                        <br><!-- Salto de línea -->
+                        <p>Descripción: Galletas sabor vainilla - marca San Jorge </p>
+                        <p>
+                            <!-- class, es un atributo cuyo valor se puede repetir -->
+                            <span class="precioOriginal">S/7.00</span> <span class="precioDescuento"> - 3%</span> <br>
+                            <span class="precioFinal">S/6.80</span>
+                        </p>
+                        <button type="button" class="btn btn-primary btn-sm d-block m-auto">Agregar al carrito</button type="button" class="btn btn-primary btn-sm d-block m-auto">
+                        <br><!-- Salto de línea -->
+                    </div>
+                </div>
+               
+            </article>
+            <!-- Articulo 07 -->
+            <article class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card border-warning my-3">
+                    <div class="card-body">
+                        <picture>
+                            <!-- El arcivo img07.webp está dentro de la carpeta img  -->
+                            <img class="img-fluid" src="img/img07.webp" alt="Galleta animalitos" class="imgProducto">
+                        </picture>
+                        <hr><!-- línea horizontal -->
+                        <h5>Galleta Animalitos San Jorge</h5>
+                        <br><!-- Salto de línea -->
+                        <p>Descripción: Galletas en forma de animalitos</p>
+                        <p>
+                            <!-- class, es un atributo cuyo valor se puede repetir -->
+                            <span class="precioOriginal">S/10.50</span> <span class="precioDescuento"> - 2%</span> <br>
+                            <span class="precioFinal">S/10.30</span>
+                        </p>
+                        <button type="button" class="btn btn-primary btn-sm d-block m-auto">Agregar al carrito</button type="button" class="btn btn-primary btn-sm d-block m-auto">
+                        <br><!-- Salto de línea -->
+                    </div>
+                </div>
+                
+            </article>
+            <!-- Articulo 08 -->
+            <article class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card border-warning my-3">
+                    <div class="card-body">
+                        <picture>
+                            <!-- El arcivo img08.webp está dentro de la carpeta img  -->
+                            <img class="img-fluid" src="img/img08.webp" alt="Galleta tentación" class="imgProducto">
+                        </picture>
+                        <hr><!-- línea horizontal -->
+                        <h5>Galleta Tentación Naranja</h5>
+                        <br><!-- Salto de línea -->
+                        <p>Descripción: Galletas tentación sabor naranja</p>
+                        <p>
+                            <!-- class, es un atributo cuyo valor se puede repetir -->
+                            <span class="precioOriginal">S/0.80</span> <span class="precioDescuento"> - 1%</span> <br>
+                            <span class="precioFinal">S/0.70</span>
+                        </p>
+                        <button type="button" class="btn btn-primary btn-sm d-block m-auto">Agregar al carrito</button type="button" class="btn btn-primary btn-sm d-block m-auto">
+                        <br><!-- Salto de línea -->
+                    </div>
+                </div>
+               
+            </article>
+            <!-- Articulo 09 -->
+            <article class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card border-warning my-3">
+                    <div class="card-body">
+                        <picture>
+                            <!-- El arcivo img09.png está dentro de la carpeta img  -->
+                            <img class="img-fluid" src="img/img09.png" alt="Galletas chaplin" class="imgProducto">
+                        </picture>
+                        <hr><!-- línea horizontal -->
+                        <h5>Galletas Chaplin 60g</h5>
+                        <br><!-- Salto de línea -->
+                        <p>Descripción: Galletas chaplin crocantes y doraditas</p>
+                        <p>
+                            <!-- class, es un atributo cuyo valor se puede repetir -->
+                            <span class="precioOriginal">S/1.50</span> <span class="precioDescuento"> - 1%</span> <br>
+                            <span class="precioFinal">S/1.40</span>
+                        </p>
+                        <button type="button" class="btn btn-primary btn-sm d-block m-auto">Agregar al carrito</button type="button" class="btn btn-primary btn-sm d-block m-auto">
+                        <br><!-- Salto de línea -->
+                    </div>
+                </div>
+               
+            </article>
+            <!-- Articulo 10 -->
+            <article class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card border-warning my-3">
+                    <div class="card-body">
+                        <picture>
+                            <!-- El arcivo img10.webp está dentro de la carpeta img  -->
+                            <img class="img-fluid" src="img/img10.webp" alt="Chupetines bon bon" class="imgProducto">
+                        </picture>
+                        <hr><!-- línea horizontal -->
+                        <h5>Chupetines Bon Bon Bum</h5>
+                        <br><!-- Salto de línea -->
+                        <p>Descripción: Sabor a mango con relleno de chicle - contiene 24 und</p>
+                        <p>
+                            <!-- class, es un atributo cuyo valor se puede repetir -->
+                            <span class="precioOriginal">S/5.80</span> <span class="precioDescuento"> - 2%</span> <br>
+                            <span class="precioFinal">S/5.60</span>
+                        </p>
+                        <button type="button" class="btn btn-primary btn-sm d-block m-auto">Agregar al carrito</button type="button" class="btn btn-primary btn-sm d-block m-auto">
+                        <br><!-- Salto de línea -->
+                    </div>
+                </div>
+               
+            </article>
+            <!-- Articulo 11 -->
+            <article class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card border-warning my-3">
+                    <div class="card-body">
+                        <picture>
+                            <!-- El arcivo img11.webp está dentro de la carpeta img  -->
+                            <img class="img-fluid" src="img/img11.webp" alt="Maní confitado" class="imgProducto">
+                        </picture>
+                        <hr><!-- línea horizontal -->
+                        <h5>Maní Confitado Marco </h5>
+                        <br><!-- Salto de línea -->
+                        <p>Descripción: Maní recubierto con una capa de caramenlo y ajonjolí</p> 
+                        <p>
+                            <!-- class, es un atributo cuyo valor se puede repetir -->
+                            <span class="precioOriginal">S/3.90</span> <span class="precioDescuento"> - 1%</span> <br>
+                            <span class="precioFinal">S/3.80</span>
+                        </p>
+                        <button type="button" class="btn btn-primary btn-sm d-block m-auto">Agregar al carrito</button type="button" class="btn btn-primary btn-sm d-block m-auto">
+                        <br><!-- Salto de línea -->
+                    </div>
+                </div>
+                
+            </article>
+            <!-- Articulo 12 -->
+            <article class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card border-warning my-3">
+                    <div class="card-body">
+                        <picture>
+                            <!-- El arcivo img12.webp está dentro de la carpeta img  -->
+                            <img class="img-fluid" src="img/img12.webp" alt="Mini sapito" class="imgProducto">
+                        </picture>
+                        <hr><!-- línea horizontal -->
+                        <h5>Mini Sapito 275g</h5>
+                        <br><!-- Salto de línea -->
+                        <p>Descripción: En forma de sapito rellena de maní, manjar y fresa.</p>
+                        <p>
+                            <!-- class, es un atributo cuyo valor se puede repetir -->
+                            <span class="precioOriginal">S/14.20</span> <span class="precioDescuento"> - 2%</span> <br>
+                            <span class="precioFinal">S13.90</span>
+                        </p>
+                        <button type="button" class="btn btn-primary btn-sm d-block m-auto">Agregar al carrito</button type="button" class="btn btn-primary btn-sm d-block m-auto">
+                        <br><!-- Salto de línea -->
+                    </div>
+                </div>
+              
+            </article>
+            <!-- Articulo 13 -->
+            <article class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card border-warning my-3">
+                    <div class="card-body">
+                        <picture>
+                            <!-- El arcivo img13.jpg está dentro de la carpeta img  -->
+                            <img class="img-fluid" src="img/img13.png" alt="Trifruna" class="imgProducto">
+                        </picture>
+                        <hr><!-- línea horizontal -->
+                        <h5>Trifruna 70 und</h5>
+                        <br><!-- Salto de línea -->
+                        <p>Descripción: Caramelos masticables de 3 sabores.</p>
+                        <p>
+                            <!-- class, es un atributo cuyo valor se puede repetir -->
+                            <span class="precioOriginal">S/8.50</span> <span class="precioDescuento"> - 2%</span> <br>
+                            <span class="precioFinal">S8.30</span>
+                        </p>
+                        <button type="button" class="btn btn-primary btn-sm d-block m-auto">Agregar al carrito</button type="button" class="btn btn-primary btn-sm d-block m-auto">
+                        <br><!-- Salto de línea -->
+                    </div>
+                </div>
+               
+            </article>
+            <!-- Articulo 14 -->
+            <article class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card border-warning my-3">
+                    <div class="card-body">
+                        <picture>
+                            <!-- El arcivo img14.jpg está dentro de la carpeta img  -->
+                            <img class="img-fluid" src="img/img14.jpg" alt="Gomitas ambrosía" class="imgProducto">
+                        </picture>
+                        <hr><!-- línea horizontal -->
+                        <h5>Gomitas Ambrosía 480g</h5>
+                        <br><!-- Salto de línea -->
+                        <p>Descripción: Gomitas de sabores: Fresa,naranaja,limón,uva y piña.</p>
+                        <p>
+                            <!-- class, es un atributo cuyo valor se puede repetir -->
+                            <span class="precioOriginal">S/8.50</span> <span class="precioDescuento"> - 2%</span> <br>
+                            <span class="precioFinal">S/8.30</span>
+                        </p>
+                        <button type="button" class="btn btn-primary btn-sm d-block m-auto">Agregar al carrito</button type="button" class="btn btn-primary btn-sm d-block m-auto">
+                        <br><!-- Salto de línea -->
+                    </div>
+                </div>
+              
+            </article>
+            <!-- Articulo 15 -->
+            <article class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card border-warning my-3">
+                    <div class="card-body">
+                        <picture>
+                            <!-- El arcivo img15.jpg está dentro de la carpeta img  -->
+                            <img class="img-fluid" src="img/img15.jpg" alt="Big ben" class="imgProducto">
+                        </picture>
+                        <hr><!-- línea horizontal -->
+                        <h5>Big Ben Chocolate Blanco</h5>
+                        <br><!-- Salto de línea -->
+                        <p>Descripción: Caramelo de leche con sabor a chocolate blanco.</p>
+                        <p>
+                            <!-- class, es un atributo cuyo valor se puede repetir -->
+                            <span class="precioOriginal">S/9.50</span> <span class="precioDescuento"> - 2%</span> <br>
+                            <span class="precioFinal">S/9.30</span>
+                        </p>
+                        <button type="button" class="btn btn-primary btn-sm d-block m-auto">Agregar al carrito</button type="button" class="btn btn-primary btn-sm d-block m-auto">
+                        <br><!-- Salto de línea -->
+                    </div>
+                </div>
+               
+            </article>
+            <!-- Articulo 16 -->
+            <article class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card border-warning my-3">
+                    <div class="card-body">
+                        <picture>
+                            <!-- El arcivo img16.jpg está dentro de la carpeta img  -->
+                            <img class="img-fluid" src="img/img16.jpg" alt="Chapulín colorado" class="imgProducto">
+                        </picture>
+                        <hr><!-- línea horizontal -->
+                        <h5>Chupetín Chapulín Colorado </h5>
+                        <br><!-- Salto de línea -->
+                        <p>Descripción: Con 11sabores a chicha morada,manzana y cereza</p>
+                        <p>
+                            <!-- class, es un atributo cuyo valor se puede repetir -->
+                            <span class="precioOriginal">S/8.50</span> <span class="precioDescuento"> - 2%</span> <br>
+                            <span class="precioFinal">S/8.30</span>
+                        </p>
+                        <button type="button" class="btn btn-primary btn-sm d-block m-auto">Agregar al carrito</button type="button" class="btn btn-primary btn-sm d-block m-auto">
+                        <br><!-- Salto de línea -->
+                    </div>
+                </div>
+               
+            </article>
+            <!-- Articulo 17 -->
+            <article class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card border-warning my-3">
+                    <div class="card-body">
+                        <picture>
+                            <!-- El arcivo img17.jpg está dentro de la carpeta img  -->
+                            <img class="img-fluid" src="img/img17.jpg" alt="Chicha morada" class="imgProducto">
+                        </picture>
+                        <hr><!-- línea horizontal -->
+                        <h5>Caramelos Chicha Morada Sayon </h5>
+                        <br><!-- Salto de línea -->
+                        <p>Descripción: Caramelos con sabor a chicha morada - 110und</p>
+                        <p>
+                            <!-- class, es un atributo cuyo valor se puede repetir -->
+                            <span class="precioOriginal">S/5.50</span> <span class="precioDescuento"> - 1%</span> <br>
+                            <span class="precioFinal">S/5.40</span>
+                        </p>
+                        <button type="button" class="btn btn-primary btn-sm d-block m-auto">Agregar al carrito</button type="button" class="btn btn-primary btn-sm d-block m-auto">
+                        <br><!-- Salto de línea -->
+                    </div>
+                </div>
+               
+            </article>
+            <!-- Articulo 18 -->
+            <article class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card border-warning my-3">
+                    <div class="card-body">
+                        <picture>
+                            <!-- El arcivo img18.jpg está dentro de la carpeta img  -->
+                            <img class="img-fluid" src="img/img18.jpg" alt="Café gurmé" class="imgProducto">
+                        </picture>
+                        <hr><!-- línea horizontal -->
+                        <h5>Super Café Gurmé</h5>
+                        <br><!-- Salto de línea -->
+                        <p>Descripción: Caramelo blando con el mejor sabor a Café - 100und</p>
+                        <p>
+                            <!-- class, es un atributo cuyo valor se puede repetir -->
+                            <span class="precioOriginal">S/12.10</span> <span class="precioDescuento"> - 3%</span> <br>
+                            <span class="precioFinal">S/11.70</span>
+                        </p>
+                        <button type="button" class="btn btn-primary btn-sm d-block m-auto">Agregar al carrito</button type="button" class="btn btn-primary btn-sm d-block m-auto">
+                        <br><!-- Salto de línea -->
+                    </div>
+                </div>
+               
+            </article>
+            <!-- Articulo 19 -->
+            <article class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card border-warning my-3">
+                    <div class="card-body">
+                        <picture>
+                            <!-- El arcivo img19.jpg está dentro de la carpeta img  -->
+                            <img class="img-fluid" src="img/img19.jpg" alt="Caramelos limón" class="imgProducto">
+                        </picture>
+                        <hr><!-- línea horizontal -->
+                        <h5>Caramelos Arcor Limón </h5>
+                        <br><!-- Salto de línea -->
+                        <p>Descripción: Caramelos con sabor a limón - 100und</p>
+                        <p>
+                            <!-- class, es un atributo cuyo valor se puede repetir -->
+                            <span class="precioOriginal">S/8.50</span> <span class="precioDescuento"> - 2%</span> <br>
+                            <span class="precioFinal">S/8.30</span>
+                        </p>
+                        <button type="button" class="btn btn-primary btn-sm d-block m-auto">Agregar al carrito</button type="button" class="btn btn-primary btn-sm d-block m-auto">
+                        <br><!-- Salto de línea -->
+                    </div>
+                </div>
+               
+            </article>
+            <!-- Articulo 20 -->
+            <article class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card border-warning my-3">
+                    <div class="card-body">
+                        <picture>
+                            <!-- El arcivo img20.jpg está dentro de la carpeta img  -->
+                            <img class="img-fluid" src="img/img20.jpg" alt="Caramelos trome" class="imgProducto">
+                        </picture>
+                        <hr><!-- línea horizontal -->
+                        <h5>Caramelos Trome Clásico</h5>
+                        <br><!-- Salto de línea -->
+                        <p>Descripción: Delicioso y tradicional sabor a dulce de leche - 100und</p>
+                        <p>
+                            <!-- class, es un atributo cuyo valor se puede repetir -->
+                            <span class="precioOriginal">S/5.00</span> <span class="precioDescuento"> - 1%</span> <br>
+                            <span class="precioFinal">S/4.90</span>
+                        </p>
+                        <button type="button" class="btn btn-primary btn-sm d-block m-auto">Agregar al carrito</button>
+                        <br><!-- Salto de línea -->
+                    </div>
+                </div>
+                
+            </article>
+
+        </section>
+    </main>
+
+    <footer class="footer  my-3 p-3" > <!-- Pie de página -->
+        <p class="h5 text-center text-white">Todos los derechos Reservados &copy; 2023 a Candy Malvys</p>
+        <P class="h5 text-center text-white">Desarrollado por Ronal Salazar M</P>
+    </footer>
+
+    <!-- Aquí se ejecutan las instrucciones Javascript -->
+
+    <!-- Cargando funciones de Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

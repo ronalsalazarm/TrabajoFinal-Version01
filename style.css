@@ -1,8 +1,9 @@
+/*Encabezado*/
 header{
     background-image: url(img/header.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-position: center; /* centrar la imagen */
+    background-size: cover;  /* El ancho al máximo y la altura automático */
+    background-repeat: no-repeat; /* la imagen no se repite */
 }
 
 
@@ -24,10 +25,20 @@ header{
     color: firebrick;
     font-weight: bold;
 }
+/* Estilos para el botón */
 .btn{
     padding: 5px 15px;
   
 }
+
+/* Estilos para el botón */
+.btn-p{
+    background-color:#800020; 
+    padding: 10px 30px;
+    border: none;
+}
+
+/* Estilos para el pie de página*/
 .footer{
     background-color: #800020;
 }

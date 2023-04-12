@@ -19,33 +19,53 @@
     <header class="text-center text-white p-4"><!-- Encabezado -->
         <h1>Candy Malvys</h1> <!-- Título 1 -->
         <h2>La mayor variedad de golosinas</h2> <!-- Título 2 -->
-    </header> 
-   
-    <nav class="navbar navbar-expand-lg p-2  bg-warning-subtle text-emphasis-warning " >
+    </header>
+
+    <nav class="navbar navbar-expand-lg p-2  bg-warning-subtle text-emphasis-warning ">
         <div class="container container-fluid  ">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-              </button>
+            </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 " >
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="about.html">¿Quienes Somos?</a>
+                        <a class="nav-link" href="about.html">¿QUIENES SOMOS?</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contáctenos</a>
+                        <a class="nav-link" href="contacto.html">CONTÁCTENOS</a>
                     </li>
                 </ul>
                 <form class="d-flex">
-                  
-                    <button class="btn btn-warning text-white  btn-lg " type="submit">Carrito</button>
+
+                    <button type="button" class="btn btn-warning text-white  btn-lg "  data-bs-toggle="modal" data-bs-target="#ventanaCarrito" >Carrito</button>
                 </form>
             </div>
         </div>
     </nav>
-    
+
+    <!-- Ventana de Carrito -->
+    <div id="ventanaCarrito" class="modal fade " tabindex="-1">
+        <div class="modal-dialog ">
+            <div class="modal-content bg-warning">
+                <div class="modal-header">
+                    <h5 class="modal-title">Carrito</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Su carrito está actualmente vacío.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary"  >Limpiar</button>
+                    <button type="button" class="btn btn-primary">Finalizar compra</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Notificación -->
     <div class="text-center p-3 bg-warning">
@@ -63,24 +83,27 @@
                     <div class="card-body">
                         <picture>
                             <!-- El arcivo img01.jpg está dentro de la carpeta img  -->
-                            <img class="img-fluid" src="img/img01.jpg" alt="Galleta tejana" class="imgProducto">   <!-- Insertando una imagen -->
-                          
+                            <img class="img-fluid" src="img/img01.jpg" alt="Galleta tejana" class="imgProducto">
+                            <!-- Insertando una imagen -->
+
                         </picture>
                         <hr><!-- línea horizontal -->
-                            <h5 class="text-dark text-center ">Galleta Tejana Sayon 480g</h5> <!-- título nivel 3 -->
-                            <br><!-- Salto de línea -->
-                            <p class="descripcion">Descripción: Galletas con cobertura sabor a chocolate</p> <!-- Es un párrafo -->
+                        <h5 class="text-dark text-center ">Galleta Tejana Sayon 480g</h5> <!-- título nivel 3 -->
+                        <br><!-- Salto de línea -->
+                        <p class="descripcion" class="descripcion">Descripción: Galletas con cobertura sabor a chocolate</p>
+                        <!-- Es un párrafo -->
+
+                        <p>
+                            <!-- class, es un atributo cuyo valor se puede repetir -->
+                            <span class="precioOriginal">S/11.20</span> <span class="precioDescuento"> - 2%</span> <br>
+                            <!-- span,contenedor en la misma línea -->
+                            <span class="precioFinal">S/10.90</span>
+                        </p>
+                        <button type="button" class="btn btn-warning text-white btn-sm d-block m-auto">Agregar al carrito</button>
                            
-                            <p>
-                                <!-- class, es un atributo cuyo valor se puede repetir -->
-                                <span class="precioOriginal">S/11.20</span> <span class="precioDescuento"> - 2%</span> <br>
-                                <!-- span,contenedor en la misma línea -->
-                                <span class="precioFinal">S/10.90</span>
-                            </p>
-                            <button type="button" class="btn btn-primary btn-sm d-block m-auto">Agregar al carrito</button type="button" class="btn btn-primary btn-sm d-block m-auto">
-                            <br>
+                        <br>
                     </div>
-                </div>  
+                </div>
             </article>
             <!-- Articulo 02 -->
             <article class="col-lg-3 col-md-4 col-sm-6">
@@ -91,20 +114,21 @@
                             <img class="img-fluid" src="img/img02.webp" alt="Galleta casino" class="imgProducto">
                         </picture>
                         <hr><!-- línea horizontal -->
-                            <h5>Galleta Casino Fresa</h5>
-                            <br><!-- Salto de línea -->
-                            <P>Descripción: Galleta con crema sabor fresa - contiene 6 paquetes </P>
-                            <p>
-                                <!-- class, es un atributo cuyo valor se puede repetir -->
-                                <span class="precioOriginal">S/5.60</span> <span class="precioDescuento"> - 1%</span> <br>
-                                <span class="precioFinal">S/5.50</span>
-                            </p>
-                            <button type="button" class="btn btn-primary btn-sm d-block m-auto">Agregar al carrito</button type="button" class="btn btn-primary btn-sm d-block m-auto">
-                            <br><!-- Salto de línea -->
-                       
+                        <h5>Galleta Casino Fresa</h5>
+                        <br><!-- Salto de línea -->
+                        <P class="descripcion">Descripción: Galleta con crema sabor fresa - contiene 6 paquetes </P>
+                        <p>
+                            <!-- class, es un atributo cuyo valor se puede repetir -->
+                            <span class="precioOriginal">S/5.60</span> <span class="precioDescuento"> - 1%</span> <br>
+                            <span class="precioFinal">S/5.50</span>
+                        </p>
+                        <button type="button" class="btn btn-warning text-white btn-sm d-block m-auto">Agregar al carrito</button>
+                          
+                        <br><!-- Salto de línea -->
+
                     </div>
                 </div>
-               
+
             </article>
             <!-- Articulo 03 -->
             <article class="col-lg-3 col-md-4 col-sm-6">
@@ -117,17 +141,18 @@
                         <hr><!-- línea horizontal -->
                         <h5>Galleta Margarita Sayon </h5>
                         <br><!-- Salto de línea -->
-                        <p>Descripción: Galletas dulces - contiene 6 paquetes de galletas</p>
+                        <p class="descripcion">Descripción: Galletas dulces - contiene 6 paquetes de galletas</p>
                         <p>
                             <!-- class, es un atributo cuyo valor se puede repetir -->
                             <span class="precioOriginal">S/5.00</span> <span class="precioDescuento"> - 2%</span> <br>
                             <span class="precioFinal">S/4.90</span>
                         </p>
-                        <button type="button" class="btn btn-primary btn-sm d-block m-auto">Agregar al carrito</button type="button" class="btn btn-primary btn-sm d-block m-auto">
+                        <button type="button" class="btn btn-warning text-white btn-sm d-block m-auto">Agregar al carrito</button>
+                          
                         <br><!-- Salto de línea -->
                     </div>
                 </div>
-                
+
             </article>
             <!-- Articulo 04 -->
             <article class="col-lg-3 col-md-4 col-sm-6">
@@ -140,19 +165,20 @@
                         <hr><!-- línea horizontal -->
                         <h5>Galleta Chomp Chocolate</h5>
                         <br><!-- Salto de línea -->
-                        <p>Descripción: Galletas Chomp sabor chocolate - Contiene 6 unidades</p>
-                        
+                        <p class="descripcion">Descripción: Galletas Chomp sabor chocolate - Contiene 6 unidades</p>
+
                         <p>
                             <!-- class, es un atributo cuyo valor se puede repetir -->
                             <span class="precioOriginal">S/14.80</span> <span class="precioDescuento"> - 3%</span> <br>
                             <span class="precioFinal">S/14.40</span>
                         </p>
-                       
-                        <button type="button" class="btn btn-primary btn-sm d-block m-auto">Agregar al carrito</button type="button" class="btn btn-primary btn-sm d-block m-auto">
+
+                        <button type="button" class="btn btn-warning text-white btn-sm d-block m-auto">Agregar al carrito</button>
+                            
                         <br>
                     </div>
                 </div>
-              
+
             </article>
             <!-- Articulo 05 -->
             <article class="col-lg-3 col-md-4 col-sm-6">
@@ -165,17 +191,18 @@
                         <hr><!-- línea horizontal -->
                         <h5>Galletas Morochas</h5>
                         <br><!-- Salto de línea -->
-                        <p>Descripción: Galletas bañadas con pasta sabor a chocolate </p>
+                        <p class="descripcion">Descripción: Galletas bañadas con pasta sabor a chocolate </p>
                         <p>
                             <!-- class, es un atributo cuyo valor se puede repetir -->
                             <span class="precioOriginal">S/1.20</span> <span class="precioDescuento"> - 1%</span> <br>
                             <span class="precioFinal">S/1.10</span>
                         </p>
-                        <button type="button" class="btn btn-primary btn-sm d-block m-auto">Agregar al carrito</button type="button" class="btn btn-primary btn-sm d-block m-auto">
+                        <button type="button" class="btn btn-warning text-white btn-sm d-block m-auto">Agregar al carrito</button>
+                           
                         <br><!-- Salto de línea -->
                     </div>
                 </div>
-               
+
             </article>
             <!-- Articulo 06 -->
             <article class="col-lg-3 col-md-4 col-sm-6">
@@ -188,17 +215,18 @@
                         <hr><!-- línea horizontal -->
                         <h5>Galleta Munición 450g</h5>
                         <br><!-- Salto de línea -->
-                        <p>Descripción: Galletas sabor vainilla - marca San Jorge </p>
+                        <p class="descripcion">Descripción: Galletas sabor vainilla - marca San Jorge </p>
                         <p>
                             <!-- class, es un atributo cuyo valor se puede repetir -->
                             <span class="precioOriginal">S/7.00</span> <span class="precioDescuento"> - 3%</span> <br>
                             <span class="precioFinal">S/6.80</span>
                         </p>
-                        <button type="button" class="btn btn-primary btn-sm d-block m-auto">Agregar al carrito</button type="button" class="btn btn-primary btn-sm d-block m-auto">
+                        <button type="button" class="btn btn-warning text-white btn-sm d-block m-auto">Agregar al carrito</button
+                            type="button" class="btn btn-warning text-white btn-sm d-block m-auto">
                         <br><!-- Salto de línea -->
                     </div>
                 </div>
-               
+
             </article>
             <!-- Articulo 07 -->
             <article class="col-lg-3 col-md-4 col-sm-6">
@@ -211,17 +239,18 @@
                         <hr><!-- línea horizontal -->
                         <h5>Galleta Animalitos San Jorge</h5>
                         <br><!-- Salto de línea -->
-                        <p>Descripción: Galletas en forma de animalitos</p>
+                        <p class="descripcion">Descripción: Galletas en forma de animalitos</p>
                         <p>
                             <!-- class, es un atributo cuyo valor se puede repetir -->
                             <span class="precioOriginal">S/10.50</span> <span class="precioDescuento"> - 2%</span> <br>
                             <span class="precioFinal">S/10.30</span>
                         </p>
-                        <button type="button" class="btn btn-primary btn-sm d-block m-auto">Agregar al carrito</button type="button" class="btn btn-primary btn-sm d-block m-auto">
+                        <button type="button" class="btn btn-warning text-white btn-sm d-block m-auto">Agregar al carrito</button>
+                           
                         <br><!-- Salto de línea -->
                     </div>
                 </div>
-                
+
             </article>
             <!-- Articulo 08 -->
             <article class="col-lg-3 col-md-4 col-sm-6">
@@ -234,17 +263,18 @@
                         <hr><!-- línea horizontal -->
                         <h5>Galleta Tentación Naranja</h5>
                         <br><!-- Salto de línea -->
-                        <p>Descripción: Galletas tentación sabor naranja</p>
+                        <p class="descripcion">Descripción: Galletas tentación sabor naranja</p>
                         <p>
                             <!-- class, es un atributo cuyo valor se puede repetir -->
                             <span class="precioOriginal">S/0.80</span> <span class="precioDescuento"> - 1%</span> <br>
                             <span class="precioFinal">S/0.70</span>
                         </p>
-                        <button type="button" class="btn btn-primary btn-sm d-block m-auto">Agregar al carrito</button type="button" class="btn btn-primary btn-sm d-block m-auto">
+                        <button type="button" class="btn btn-warning text-white btn-sm d-block m-auto">Agregar al carrito</button>
+                           
                         <br><!-- Salto de línea -->
                     </div>
                 </div>
-               
+
             </article>
             <!-- Articulo 09 -->
             <article class="col-lg-3 col-md-4 col-sm-6">
@@ -257,17 +287,18 @@
                         <hr><!-- línea horizontal -->
                         <h5>Galletas Chaplin 60g</h5>
                         <br><!-- Salto de línea -->
-                        <p>Descripción: Galletas chaplin crocantes y doraditas</p>
+                        <p class="descripcion">Descripción: Galletas chaplin crocantes y doraditas</p>
                         <p>
                             <!-- class, es un atributo cuyo valor se puede repetir -->
                             <span class="precioOriginal">S/1.50</span> <span class="precioDescuento"> - 1%</span> <br>
                             <span class="precioFinal">S/1.40</span>
                         </p>
-                        <button type="button" class="btn btn-primary btn-sm d-block m-auto">Agregar al carrito</button type="button" class="btn btn-primary btn-sm d-block m-auto">
+                        <button type="button" class="btn btn-warning text-white btn-sm d-block m-auto">Agregar al carrito</button>
+                           
                         <br><!-- Salto de línea -->
                     </div>
                 </div>
-               
+
             </article>
             <!-- Articulo 10 -->
             <article class="col-lg-3 col-md-4 col-sm-6">
@@ -280,17 +311,18 @@
                         <hr><!-- línea horizontal -->
                         <h5>Chupetines Bon Bon Bum</h5>
                         <br><!-- Salto de línea -->
-                        <p>Descripción: Sabor a mango con relleno de chicle - contiene 24 und</p>
+                        <p class="descripcion">Descripción: Sabor a mango con relleno de chicle - contiene 24 und</p>
                         <p>
                             <!-- class, es un atributo cuyo valor se puede repetir -->
                             <span class="precioOriginal">S/5.80</span> <span class="precioDescuento"> - 2%</span> <br>
                             <span class="precioFinal">S/5.60</span>
                         </p>
-                        <button type="button" class="btn btn-primary btn-sm d-block m-auto">Agregar al carrito</button type="button" class="btn btn-primary btn-sm d-block m-auto">
+                        <button type="button" class="btn btn-warning text-white btn-sm d-block m-auto">Agregar al carrito</button>
+                            
                         <br><!-- Salto de línea -->
                     </div>
                 </div>
-               
+
             </article>
             <!-- Articulo 11 -->
             <article class="col-lg-3 col-md-4 col-sm-6">
@@ -303,17 +335,18 @@
                         <hr><!-- línea horizontal -->
                         <h5>Maní Confitado Marco </h5>
                         <br><!-- Salto de línea -->
-                        <p>Descripción: Maní recubierto con una capa de caramenlo y ajonjolí</p> 
+                        <p class="descripcion">Descripción: Maní recubierto con una capa de caramenlo y ajonjolí</p>
                         <p>
                             <!-- class, es un atributo cuyo valor se puede repetir -->
                             <span class="precioOriginal">S/3.90</span> <span class="precioDescuento"> - 1%</span> <br>
                             <span class="precioFinal">S/3.80</span>
                         </p>
-                        <button type="button" class="btn btn-primary btn-sm d-block m-auto">Agregar al carrito</button type="button" class="btn btn-primary btn-sm d-block m-auto">
+                        <button type="button" class="btn btn-warning text-white btn-sm d-block m-auto">Agregar al carrito</button>
+                           
                         <br><!-- Salto de línea -->
                     </div>
                 </div>
-                
+
             </article>
             <!-- Articulo 12 -->
             <article class="col-lg-3 col-md-4 col-sm-6">
@@ -326,17 +359,18 @@
                         <hr><!-- línea horizontal -->
                         <h5>Mini Sapito 275g</h5>
                         <br><!-- Salto de línea -->
-                        <p>Descripción: En forma de sapito rellena de maní, manjar y fresa.</p>
+                        <p class="descripcion">Descripción: En forma de sapito rellena de maní, manjar y fresa.</p>
                         <p>
                             <!-- class, es un atributo cuyo valor se puede repetir -->
                             <span class="precioOriginal">S/14.20</span> <span class="precioDescuento"> - 2%</span> <br>
-                            <span class="precioFinal">S13.90</span>
+                            <span class="precioFinal">S/13.90</span>
                         </p>
-                        <button type="button" class="btn btn-primary btn-sm d-block m-auto">Agregar al carrito</button type="button" class="btn btn-primary btn-sm d-block m-auto">
+                        <button type="button" class="btn btn-warning text-white btn-sm d-block m-auto">Agregar al carrito</button>
+                           
                         <br><!-- Salto de línea -->
                     </div>
                 </div>
-              
+
             </article>
             <!-- Articulo 13 -->
             <article class="col-lg-3 col-md-4 col-sm-6">
@@ -349,17 +383,18 @@
                         <hr><!-- línea horizontal -->
                         <h5>Trifruna 70 und</h5>
                         <br><!-- Salto de línea -->
-                        <p>Descripción: Caramelos masticables de 3 sabores.</p>
+                        <p class="descripcion">Descripción: Caramelos masticables de 3 sabores.</p>
                         <p>
                             <!-- class, es un atributo cuyo valor se puede repetir -->
                             <span class="precioOriginal">S/8.50</span> <span class="precioDescuento"> - 2%</span> <br>
-                            <span class="precioFinal">S8.30</span>
+                            <span class="precioFinal">S/8.30</span>
                         </p>
-                        <button type="button" class="btn btn-primary btn-sm d-block m-auto">Agregar al carrito</button type="button" class="btn btn-primary btn-sm d-block m-auto">
+                        <button type="button" class="btn btn-warning text-white btn-sm d-block m-auto">Agregar al carrito</button>
+                           
                         <br><!-- Salto de línea -->
                     </div>
                 </div>
-               
+
             </article>
             <!-- Articulo 14 -->
             <article class="col-lg-3 col-md-4 col-sm-6">
@@ -372,17 +407,18 @@
                         <hr><!-- línea horizontal -->
                         <h5>Gomitas Ambrosía 480g</h5>
                         <br><!-- Salto de línea -->
-                        <p>Descripción: Gomitas de sabores: Fresa,naranaja,limón,uva y piña.</p>
+                        <p class="descripcion">Descripción: Gomitas de sabores: Fresa,naranaja,limón,uva y piña.</p>
                         <p>
                             <!-- class, es un atributo cuyo valor se puede repetir -->
                             <span class="precioOriginal">S/8.50</span> <span class="precioDescuento"> - 2%</span> <br>
                             <span class="precioFinal">S/8.30</span>
                         </p>
-                        <button type="button" class="btn btn-primary btn-sm d-block m-auto">Agregar al carrito</button type="button" class="btn btn-primary btn-sm d-block m-auto">
+                        <button type="button" class="btn btn-warning text-white btn-sm d-block m-auto">Agregar al carrito</button>
+                          
                         <br><!-- Salto de línea -->
                     </div>
                 </div>
-              
+
             </article>
             <!-- Articulo 15 -->
             <article class="col-lg-3 col-md-4 col-sm-6">
@@ -395,17 +431,18 @@
                         <hr><!-- línea horizontal -->
                         <h5>Big Ben Chocolate Blanco</h5>
                         <br><!-- Salto de línea -->
-                        <p>Descripción: Caramelo de leche con sabor a chocolate blanco.</p>
+                        <p class="descripcion">Descripción: Caramelo de leche con sabor a chocolate blanco.</p>
                         <p>
                             <!-- class, es un atributo cuyo valor se puede repetir -->
                             <span class="precioOriginal">S/9.50</span> <span class="precioDescuento"> - 2%</span> <br>
                             <span class="precioFinal">S/9.30</span>
                         </p>
-                        <button type="button" class="btn btn-primary btn-sm d-block m-auto">Agregar al carrito</button type="button" class="btn btn-primary btn-sm d-block m-auto">
+                        <button type="button" class="btn btn-warning text-white btn-sm d-block m-auto">Agregar al carrito</button>
+                          
                         <br><!-- Salto de línea -->
                     </div>
                 </div>
-               
+
             </article>
             <!-- Articulo 16 -->
             <article class="col-lg-3 col-md-4 col-sm-6">
@@ -418,17 +455,18 @@
                         <hr><!-- línea horizontal -->
                         <h5>Chupetín Chapulín Colorado </h5>
                         <br><!-- Salto de línea -->
-                        <p>Descripción: Con 11sabores a chicha morada,manzana y cereza</p>
+                        <p class="descripcion">Descripción: Con 11sabores a chicha morada,manzana y cereza</p>
                         <p>
                             <!-- class, es un atributo cuyo valor se puede repetir -->
                             <span class="precioOriginal">S/8.50</span> <span class="precioDescuento"> - 2%</span> <br>
                             <span class="precioFinal">S/8.30</span>
                         </p>
-                        <button type="button" class="btn btn-primary btn-sm d-block m-auto">Agregar al carrito</button type="button" class="btn btn-primary btn-sm d-block m-auto">
+                        <button type="button" class="btn btn-warning text-white btn-sm d-block m-auto">Agregar al carrito</button>
+                           
                         <br><!-- Salto de línea -->
                     </div>
                 </div>
-               
+
             </article>
             <!-- Articulo 17 -->
             <article class="col-lg-3 col-md-4 col-sm-6">
@@ -439,19 +477,20 @@
                             <img class="img-fluid" src="img/img17.jpg" alt="Chicha morada" class="imgProducto">
                         </picture>
                         <hr><!-- línea horizontal -->
-                        <h5>Caramelos Chicha Morada Sayon </h5>
+                        <h5>Caramelos Chicha Morada </h5>
                         <br><!-- Salto de línea -->
-                        <p>Descripción: Caramelos con sabor a chicha morada - 110und</p>
+                        <p class="descripcion">Descripción: Caramelos con sabor a chicha morada - 110und</p>
                         <p>
                             <!-- class, es un atributo cuyo valor se puede repetir -->
                             <span class="precioOriginal">S/5.50</span> <span class="precioDescuento"> - 1%</span> <br>
                             <span class="precioFinal">S/5.40</span>
                         </p>
-                        <button type="button" class="btn btn-primary btn-sm d-block m-auto">Agregar al carrito</button type="button" class="btn btn-primary btn-sm d-block m-auto">
+                        <button type="button" class="btn btn-warning text-white btn-sm d-block m-auto">Agregar al carrito</button>
+                          
                         <br><!-- Salto de línea -->
                     </div>
                 </div>
-               
+
             </article>
             <!-- Articulo 18 -->
             <article class="col-lg-3 col-md-4 col-sm-6">
@@ -464,17 +503,18 @@
                         <hr><!-- línea horizontal -->
                         <h5>Super Café Gurmé</h5>
                         <br><!-- Salto de línea -->
-                        <p>Descripción: Caramelo blando con el mejor sabor a Café - 100und</p>
+                        <p class="descripcion">Descripción: Caramelo blando con el mejor sabor a Café - 100und</p>
                         <p>
                             <!-- class, es un atributo cuyo valor se puede repetir -->
                             <span class="precioOriginal">S/12.10</span> <span class="precioDescuento"> - 3%</span> <br>
                             <span class="precioFinal">S/11.70</span>
                         </p>
-                        <button type="button" class="btn btn-primary btn-sm d-block m-auto">Agregar al carrito</button type="button" class="btn btn-primary btn-sm d-block m-auto">
+                        <button type="button" class="btn btn-warning text-white btn-sm d-block m-auto">Agregar al carrito</button>
+                           
                         <br><!-- Salto de línea -->
                     </div>
                 </div>
-               
+
             </article>
             <!-- Articulo 19 -->
             <article class="col-lg-3 col-md-4 col-sm-6">
@@ -487,17 +527,18 @@
                         <hr><!-- línea horizontal -->
                         <h5>Caramelos Arcor Limón </h5>
                         <br><!-- Salto de línea -->
-                        <p>Descripción: Caramelos con sabor a limón - 100und</p>
+                        <p class="descripcion">Descripción: Caramelos con sabor a limón - 100und</p>
                         <p>
                             <!-- class, es un atributo cuyo valor se puede repetir -->
                             <span class="precioOriginal">S/8.50</span> <span class="precioDescuento"> - 2%</span> <br>
                             <span class="precioFinal">S/8.30</span>
                         </p>
-                        <button type="button" class="btn btn-primary btn-sm d-block m-auto">Agregar al carrito</button type="button" class="btn btn-primary btn-sm d-block m-auto">
+                        <button type="button" class="btn btn-warning text-white btn-sm d-block m-auto">Agregar al carrito</button>
+                           
                         <br><!-- Salto de línea -->
                     </div>
                 </div>
-               
+
             </article>
             <!-- Articulo 20 -->
             <article class="col-lg-3 col-md-4 col-sm-6">
@@ -510,31 +551,34 @@
                         <hr><!-- línea horizontal -->
                         <h5>Caramelos Trome Clásico</h5>
                         <br><!-- Salto de línea -->
-                        <p>Descripción: Delicioso y tradicional sabor a dulce de leche - 100und</p>
+                        <p class="descripcion">Descripción: Delicioso y tradicional sabor a dulce de leche - 100und</p>
                         <p>
                             <!-- class, es un atributo cuyo valor se puede repetir -->
                             <span class="precioOriginal">S/5.00</span> <span class="precioDescuento"> - 1%</span> <br>
                             <span class="precioFinal">S/4.90</span>
                         </p>
-                        <button type="button" class="btn btn-primary btn-sm d-block m-auto">Agregar al carrito</button>
+                        <button type="button" class="btn btn-warning text-white btn-sm d-block m-auto">Agregar al carrito</button>
                         <br><!-- Salto de línea -->
                     </div>
                 </div>
-                
+
             </article>
 
         </section>
     </main>
 
-    <footer class="footer  my-3 p-3" > <!-- Pie de página -->
+    <footer class="footer  my-3 p-3"> <!-- Pie de página -->
         <p class="h5 text-center text-white">Todos los derechos Reservados &copy; 2023 a Candy Malvys</p>
-        <P class="h5 text-center text-white">Desarrollado por Ronal Salazar M</P>
+        <P class="h5 text-center text-white">Desarrollado por Ronal Salazar M.</P>
     </footer>
 
     <!-- Aquí se ejecutan las instrucciones Javascript -->
 
     <!-- Cargando funciones de Bootstrap -->
     <script src="js/bootstrap.min.js"></script>
+
+    <!-- Javascript personalizado -->
+    <script src="js/custom.js"></script>
 </body>
 
 </html>
